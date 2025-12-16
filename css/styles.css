@@ -452,9 +452,10 @@ p {
   width: 100%;
   height: 100%;
 
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+  gap: 18px;
 }
 
 .modal {
@@ -463,11 +464,12 @@ p {
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  background: #fddada;
+  background: #ffffff;
+  padding: 40px;
 }
 /* #endregion */
 
-/* #region Animetion */
+/* #region Animation */
 @keyframes fade-in {
   from {
     opacity: 0;

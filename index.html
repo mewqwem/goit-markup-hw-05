@@ -464,8 +464,8 @@
     <div class="backdrop">
       <div class="modal">
         <button type="submit" class="modal-btn-icon">
-          <svg class="" width="24" height="24">
-            <use href=""></use>
+          <svg class="cross-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-cross"></use>
           </svg>
         </button>
 
@@ -474,36 +474,45 @@
         </p>
         <form class="modal-form" name="reviewForm">
           <div class="modal-form-field">
-            <label for=""
+            <label for="userName"
               >Name
               <div class="modal-form-wrapper">
-                <input type="text" />
+                <input type="text" name="userName" id="userName" />
                 <svg class="" width="24" height="24">
-                  <use href=""></use>
+                  <use href="./images/icons.svg#icon-user"></use>
                 </svg>
               </div>
             </label>
           </div>
           <div class="modal-form-field">
-            <label for=""
+            <label for="userEmail"
               >Email
               <div class="modal-form-wrapper">
-                <input type="text" />
+                <input type="text" name="userEmail" id="userEmail" />
                 <svg class="" width="24" height="24">
-                  <use href=""></use>
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="modal-form-field">
+            <label for="userPhone"
+              >Phone
+              <div class="modal-form-wrapper">
+                <input type="text" name="userPhone" id="userPhone" />
+                <svg class="" width="24" height="24">
+                  <use href="./images/icons.svg#icon-email"></use>
                 </svg>
               </div>
             </label>
           </div>
           <div class="modal-form-field">
             <label for=""
-              >Phone
-              <div class="modal-form-wrapper">
-                <input type="text" />
-                <svg class="" width="24" height="24">
-                  <use href=""></use>
-                </svg>
-              </div>
+              >Comment<textarea
+                name=""
+                id=""
+                placeholder="Text input"
+              ></textarea>
             </label>
           </div>
           <button class="btn btn-accent">Send</button>
