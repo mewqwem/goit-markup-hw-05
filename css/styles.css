@@ -530,7 +530,6 @@ p {
 }
 
 .backdrop.is-open .modal {
-  transition-delay: 600ms;
   opacity: 1;
   transform: translateX(-50%) translateY(-50%);
 }
@@ -538,7 +537,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-70%);
+  transform: translateX(-50%) translateY(-50%);
 
   width: 408px;
   min-height: 584px;
