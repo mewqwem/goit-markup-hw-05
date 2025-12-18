@@ -481,7 +481,7 @@ p {
   align-items: center;
 
   min-width: 165px;
-  min-height: 0;
+  min-height: 40px;
   height: 40px;
   padding: 8px 24px;
   gap: 16px;
