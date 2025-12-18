@@ -449,16 +449,15 @@ p {
 
   width: 100%;
   height: 100%;
-  background-color: rgba(57, 59, 60, 0.285);
+  background-color: rgba(46, 47, 66, 0.4);
 
   /* приховуємо елемент */
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 
-  transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 150ms;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open {
   opacity: 1;
@@ -478,21 +477,23 @@ p {
   left: 50%;
   transform: translateX(-50%) translateY(-70%);
 
-  max-width: 484px;
-  max-height: 584px;
-  padding: 40px;
-  padding-top: 72px;
+  width: 408px;
+  min-height: 584px;
+  padding: 72px 24px 24px 24px;
   border-radius: 4px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  background: #ffffff;
+  background: #fcfcfc;
 
   opacity: 0;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn-x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   position: absolute;
   top: 24px;
   right: 24px;
@@ -504,16 +505,21 @@ p {
 
   background-color: #e7e9fc;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 10);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn-x:hover,
 .modal-btn-x:focus {
   background-color: #404bbf;
-  border-color: none;
+  border: none;
 }
-.modal-btn-x:hover .modal-btn-icon {
+.modal-btn-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn-x:hover .modal-btn-icon,
+.modal-btn-x:focus .modal-btn-icon {
   fill: white;
 }
 .modal-btn-icon {
@@ -539,6 +545,10 @@ p {
 .modal-form-label {
   font-size: 12px;
   color: #8e8f99;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-bottom: 4px;
 }
 .modal-form-wrapper {
   position: relative;
@@ -550,6 +560,7 @@ p {
   width: 100%;
   height: 40px;
   outline: transparent;
+  background-color: transparent;
   padding: 11px 38px;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -563,7 +574,7 @@ p {
   left: 16px;
   transform: translateY(-50%);
 
-  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-input:focus + .modal-form-icon {
   fill: #4d5ae5;
@@ -603,11 +614,13 @@ p {
   border: 1px solid rgba(46, 47, 66, 0.4);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
 }
 .agreement-input:checked + .agreement-label > .custom-checkbox {
   background-color: #404bbf;
-  border-color: #404bbf;
+  border: none;
 }
 .custom-checkbox-icon {
   fill: transparent;
@@ -626,6 +639,7 @@ p {
 .modal-btn-submit {
   display: block;
   margin: 0 auto;
+  font-family: inherit;
 }
 /* #endregion */
 
