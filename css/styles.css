@@ -537,7 +537,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-0%);
 
   width: 408px;
   min-height: 584px;
@@ -603,9 +603,10 @@ p {
 .modal-form-field {
   margin-bottom: 8px;
 }
-.modal-form-comment {
+.modal-comment {
   margin-bottom: 16px;
-
+}
+.modal-form-comment {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
@@ -699,8 +700,9 @@ p {
 .agreement-input:checked
   + .agreement-label
   > .custom-checkbox
-  .custom-checkbox {
-  fill: #f4f4fd;
+  .custom-checkbox-icon {
+  --btn-color: #f4f4fd;
+  fill: var(--btn-color);
 }
 .modal-form-link {
   text-decoration: underline;
