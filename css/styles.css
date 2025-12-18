@@ -692,15 +692,16 @@ p {
 .agreement-input:checked + .agreement-label > .custom-checkbox {
   background-color: #404bbf;
   border: none;
+  fill: #f4f4fd;
 }
-.custom-checkbox-icon {
+/* .custom-checkbox-icon {
   fill: transparent;
-}
-.agreement-input:checked
+} */
+/* .agreement-input:checked
   + .agreement-label
   > .custom-checkbox.custom-checkbox-icon {
-  fill: #404bbf;
-}
+  fill: #f4f4fd;
+} */
 .modal-form-link {
   text-decoration: underline;
   text-decoration-skip-ink: none;
